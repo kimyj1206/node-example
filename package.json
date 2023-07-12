@@ -1,7 +1,6 @@
 {
   "name": "node",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -16,5 +15,14 @@
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimyj1206/node-example.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kimyj1206/node-example/issues"
+  },
+  "homepage": "https://github.com/kimyj1206/node-example#readme",
+  "description": ""
 }
