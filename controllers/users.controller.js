@@ -5,23 +5,22 @@ function getUsers(req, res) {
 };
 
 function getUserById(req, res) {
-  app.get('/users/:userId', (req, res) => {
-    const userId = Number(req.params.userId);
-    const user = Users[userId];
-    if(user) {
-      res.json(user);
-    } else {
-      res.sendStatus(404);
-      console.log('User not found');
-    }
-  });
+  const userId = Number(req.params.userId);
+  const user = Users[userId];
+  if(user) {
+    res.json(user);
+  } else {
+    res.sendStatus(404);
+    console.log('User not found');
+  }
 }
 
 function getUserByName(req, res) {
   const userName = req.params.userName;
-  const user = Users.find((user) => 
-    user.name === userName
+  const user = Users.find((Users) => 
+    Users.name == userName
   );
+  console.log(user.name);
   if(user) {
     res.json(user);
   } else {

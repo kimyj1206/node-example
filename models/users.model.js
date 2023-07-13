@@ -6,9 +6,11 @@ const Users = [
   {
     id: 1,
     name: 'Lucy'
+  },
+  {
+    id: 2,
+    name: 'Tom'
   }
 ]
 
-module.exports = {
-  Users
-}
+module.exports = Users
